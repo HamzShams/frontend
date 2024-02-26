@@ -1,0 +1,24 @@
+/*    Start Courses  */
+
+.courses .div {
+  margin-bottom: 5vh;
+}
+.courses .carousel img {
+  height: 30vh;
+  border-radius: 15px 15px 0 0;
+}
+.courses .card .information {
+  margin: 2vh 0;
+}
+.courses h5 {
+  color: #00324f;
+  font-weight: 600;
+}
+.courses .card button {
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 2vh;
+}
+
+
+/*  End Courses  */

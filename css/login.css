@@ -1,0 +1,98 @@
+/*    Start Log In  and register  */
+.login .row {
+  margin: 0;
+}
+.wel {
+  background-color: #14636c;
+  height: 100vh;
+}
+.login .welcome {
+  margin-top: 30vh;
+  color: #fff;
+}
+.login .welcome h1 {
+  margin: 5vh 0;
+  font-size: 50px;
+}
+.login .welcome p {
+  line-height: 1.7;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.login .welcome button {
+  background: none;
+  border: 1px solid #fff;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.info {
+  margin-top: 10vh;
+}
+.info form {
+  max-width: 450px;
+  margin: auto;
+}
+
+.info h2 {
+  font-size: 50px;
+  color: #14636c;
+  margin-bottom: 30px;
+}
+.login .welcome button:hover {
+  color: #14636c;
+  background-color: #fff;
+}
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 17px;
+  font-size: 30px;
+  color: #14636c;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.login form .send {
+  display: block;
+  width: auto;
+  margin: 10px auto;
+  background-color: #14636c;
+  border: 1px solid #14636c;
+  color: #fff;
+  font-size: 3vmin;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .wel {
+    padding-top: 15px;
+  }
+  .info {
+    margin-top: 20px;
+  }
+}
+.error-message{
+  text-align: center;
+}
+/*   End Log In  and register  */

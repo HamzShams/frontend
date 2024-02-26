@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/wallet.css">
+    </head>
+    <body>
+            <!-- Start Navbar -->
+    <nav class="navbar  navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <span>
+              <i class="fa fa-university"></i>
+              <span class="fst">Your </span><span class="sec">institute</span>
+            </span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#main-nav"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                  <a class="nav-link" href="allCourses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="wallet.html">Wallet</a>
+                  </li>
+              <li class="nav-item" id="checkOut">
+                <i class="nav-link fa fa-sign-out" style="font-size: 30px"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Start Navbar-->
+      <div class="wallet padding">
+        <div class="container">
+            <h4>How can you replenish your wallet?</h4>
+            <p class="lead"><span>The First step</span> : is to transfer an amount through one of Al-Haram or Al-Fouad branches to the account below
+            </p>
+            <p class="lead">(Mhd Khattab , Jaramanah , 0936585661)</p>
+            <p class="lead"><span>The Second step</span> : is to keep the receipt and send it within the form in the form of an image
+            </p>
+            <p class="lead"><span>The Last step</span> : Put your image and amount in Form</p>
+            <form  id="addShipment">
+                <h4>Charging The Wallet</h4>
+                <input type="file" name="image required">
+                <input type="number" min="0" placeholder="Amount" class="btn-block" name="amount" required />
+                <button  type="submit" class="btn send borderraduis">submit</button>
+                <div class="error-message"></div>
+            </form>
+        </div>
+      </div>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../api/auth.js"></script>
+        <script src="../api/wallet.js"></script>
+
+    </body>
+</html>

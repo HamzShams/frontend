@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Tahoma, sans-serif;
+}
+.row {
+  margin: 0;
+}
+/* Start Navbar */
+.navbar {
+  background-color: #14636c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000000000;
+  padding: 0;
+}
+.navbar i {
+  color: #4caf50;
+  font-size: 7vmin;
+}
+.navbar .fst {
+  font-size: 4vmin;
+  color: #fff;
+}
+.navbar .sec {
+  color: #4caf50;
+}
+
+.navbar .navbar-brand img {
+  width: 25vmin;
+  margin-right: 2vmin;
+}
+
+.navbar .navbar-nav {
+  margin-right: 8vmin;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 2.5vmin;
+  margin-left: 1.5vh;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .active > .nav-link,
+.navbar .navbar-nav .nav-link:hover {
+  color: #4caf50;
+  /* font-weight: 800; */
+}
+
+.navbar .navbar-toggler {
+  background-color: #75c881;
+}
+
+.navbar .navbar-toggler:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+.navbar .navbar-nav i {
+  font-size: 3vmin;
+  margin-left: 2vh;
+  padding: -1px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  background-color: #00324f;
+  min-width: 200px;
+  width: 30%;
+  color: #fff !important;
+  margin-top: 1vh;
+}
+
+.dropdown-menu > a {
+  color: #fff !important;
+  padding: 6px 20px;
+  transition: 0.5s;
+}
+
+.dropdown-menu > a:hover,
+.dropdown-menu > a:focus {
+  color: #00324f !important;
+  padding-left: 25px;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+/* End Navbar */
+/* Start Modal */
+.modal-dialog {
+  margin-top: 10%;
+}
+.modal-content {
+  padding: 3vh 2vh 0 1vh;
+  border: 2px solid #14636c;
+  border-radius: 10px;
+}
+.modal-content h2 {
+  color: #4caf50;
+  font-weight: 500;
+  padding: 0 4vh;
+}
+.modal-content input,
+.modal-content textarea {
+  padding: 1vh;
+  outline: none;
+}
+.fa-plus {
+  position: fixed;
+  bottom: 5vmin;
+  right: 5vmin;
+  width: 5vmin;
+  height: 5vmin;
+  line-height: 5vmin;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #00324f;
+  color: #fff;
+  font-size: 2vmin;
+  z-index: 222222;
+  cursor: pointer;
+}
+/* End Modal */
+
+/* Start Framework*/
+.active {
+  color: #4caf50 !important;
+  font-weight: 700;
+}
+.button {
+  background-color: #00324f;
+  border: 1px solid #00324f;
+  color: #fff;
+  display: block;
+}
+.nodata {
+  color: brown;
+  font-size: 5vmin;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10vh;
+}
+h4 {
+  font-weight: 500 !important;
+  color: #4caf50 !important;
+}
+h5 {
+  color: #e8c18c;
+}
+h6 {
+  color: dimgrey;
+}
+.searchButton {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #14636c;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+.search {
+  margin-bottom: 2vh;
+}
+input[type="search"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  outline: none;
+}
+.des {
+  height: 13vh;
+  overflow-x: auto;
+}
+.card {
+  border: 1px solid #14636c;
+  border-radius: 10px;
+  padding: 1vh;
+  transition: 0.2s;
+  box-shadow: 5px 3px 10px 5px #c4c4c4;
+  margin-bottom: 2vh;
+}
+.profile .card {
+  width: 30%;
+  margin: auto;
+}
+/* .card:hover {
+  border: 3px solid #14636c;
+  box-shadow: 6px 4px 12px 6px #989898;
+} */
+.padding {
+  margin-top: 10vh;
+}
+@media (max-width: 420px) {
+  table {
+    width: 150%;
+  }
+}
+.done {
+  font-weight: 900;
+  color: #4caf50;
+}
+.complete {
+  font-weight: 900;
+  color: #14636c;
+}
+.incomplete {
+  font-weight: 900;
+  color: #dc3545;
+}
+span {
+  color: #dc3545;
+  font-weight: 600;
+}
+button a,
+button a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.margin {
+  margin: auto;
+}
+input {
+  /* margin: 1vh 0; */
+  padding: 1vh;
+  /* border-radius: 8px; */
+  outline: none;
+}
+.first {
+  width: 20%;
+  /* display: block; */
+}
+.box {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+.box img{
+  width: 20%;
+}
+.box h3{
+  color: #14636c;
+  font-weight: 700;
+}
+.box span {
+  display: block;
+}
+.fa-times {
+  position: absolute;
+  right: 15px;
+  color: red;
+}
+.fa-pencil {
+  position: absolute;
+  right: 15px;
+  color: #5ea8aa;
+}
+#more{
+  background-color: #14636c;
+  border: 1px solid #14636c;
+}
+.badge-danger {
+  color: #fff;
+  background-color: #dc3545;
+  margin: 2vh;
+}
+
+/* End Framework*/

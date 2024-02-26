@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Events</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span>
+            <i class="fa fa-university"></i>
+            <span class="fst">Your </span><span class="sec">institute</span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-nav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="allCourses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="wallet.html">Wallet</a>
+            </li>
+
+            <li class="nav-item" id="checkOut">
+              <i class="nav-link fa fa-sign-out" style="font-size: 30px"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Start Navbar-->
+    <div class="events padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-12 search">
+            <input
+              type="search"
+              id="search"
+              placeholder="Search.."
+              name="search"
+            />
+            <button class="searchButton"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+        <div class="row" id="event">
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../api/auth.js"></script>
+    <script src="../api/event.js"></script>
+  </body>
+</html>

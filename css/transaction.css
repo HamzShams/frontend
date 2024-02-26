@@ -1,0 +1,47 @@
+
+.control-table {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 55vh;
+  background: #b5dcfc;
+  box-shadow: 5px 3px 10px 5px #c4c4c4;
+  border-radius: 8px;
+  margin: 5vh 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 27px;
+}
+tr{
+  border: 1px dashed #14636c;
+}
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+th {
+  color: white;
+  font-weight: 700;
+
+}
+table input{
+  width: 50%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 1vh;
+}
+@media (max-width: 420px) {
+  .padding {
+    margin-top: 6vh !important;
+  }
+}
+

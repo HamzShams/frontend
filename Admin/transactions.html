@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/transaction.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  
+
+    <title>Transactions</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span>
+            <i class="fa fa-university"></i>
+            <span class="fst">Your </span><span class="sec">institute</span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-nav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item hide">
+              <a class="nav-link" href="employees.html">Employees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="requests.html">Requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  active" href="transactions.html"
+                >Financial transactions</a
+              >
+            </li>
+            <li class="nav-item" id="checkOut">
+              <i class="nav-link fa fa-sign-out" style="font-size: 30px"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Start Navbar-->
+
+    <div class="transactions padding">
+      <div class="container">
+        <div class="control-table text-center">
+          <table id="transaction">
+            <tr style="background-color: #2e8732;">
+              <th>Student</th>
+              <th>Course</th>
+              <th>Cost</th>
+              <th>Teacher</th>
+              <th>State</th>
+            </tr>
+            <!-- <tr class="lodding">
+              <td colspan="6" style="text-align: center;color: white;">Lodding..</td>
+            </tr> -->
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../api/auth.js"></script>
+    <script src="../api/transactions.js"></script>
+  </body>
+</html>

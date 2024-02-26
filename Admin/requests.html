@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Requests</title>
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span>
+            <i class="fa fa-university"></i>
+            <span class="fst">Your </span><span class="sec">institute</span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-nav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item hide">
+              <a class="nav-link" href="employees.html">Employees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  active" href="requests.html">Requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  " href="transactions.html"
+                >Financial transactions</a
+              >
+            </li>
+            <li class="nav-item" id="checkOut">
+              <i class="nav-link fa fa-sign-out" style="font-size: 30px"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Start Navbar-->
+  <div class="requests padding">
+    <div class="container">
+      <div class="row " id="request">
+      </div>
+    </div>
+  </div>
+  <!--Modal-->
+  <!--Modal Accepte-->
+  <div class="modal fade modal4" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <h2>Charge The Wallet:</h2>
+        <div class="modal-body">
+
+          <div class="row">
+            <div class="col-sm-12 col-xs-height">
+              <form class="signup-popup" id="acceptForm">
+                <input type="number" placeholder="Add Dollar" class="btn-block" name="balance" id="balance" required min="1">
+                <div class="error-message text-center"></div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-success">Ok</a>
+                    <button class="btn btn-danger button delete" data-dismiss="modal">Close</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../api/auth.js"></script>
+  <script src="../api/requests.js"></script>
+
+</body>
+
+</html>

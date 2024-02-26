@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Events</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span>
+            <i class="fa fa-university"></i>
+            <span class="fst">Your </span><span class="sec">institute</span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-nav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item hide">
+              <a class="nav-link" href="employees.html">Employees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="requests.html">Requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="transactions.html"
+                >Financial transactions</a
+              >
+            </li>
+            <li class="nav-item" id="checkOut">
+              <i class="nav-link fa fa-sign-out" style="font-size: 30px"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Start Navbar-->
+    <div class="events padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-12 search">
+            <input
+              type="search"
+              id="search"
+              placeholder="Search.."
+              name="search"
+            />
+            <button class="searchButton"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+        <div class="row" id="event">
+        </div>
+      </div>
+      <a
+        ><i
+          class="fa fa-plus"
+          id="scroll-top"
+          data-toggle="modal"
+          data-target=".modal4"
+          data-id=""
+        ></i
+      ></a>
+    </div>
+    <!--Modal Add-->
+    <div
+      class="modal fade modal4"
+      id="modal4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <h2>Add Event:</h2>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-xs-height">
+                <form class="signup-popup" id="addEvent">
+                  <input type="file" placeholder="Choose Image" class="btn-block" name="image" required />
+
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="btn-block"
+                    name="event_name"
+                    required
+                  />
+                  <input
+                  type="text"
+                  placeholder="Place"
+                  class="btn-block"
+                  name="place"
+                  required
+                />
+                <input
+                type="date"
+                placeholder="Date"
+                class="btn-block"
+                name="date"
+                required
+              />
+                  <textarea
+                  placeholder="Description"
+                  class="btn-block"
+                  name="description"
+                  required>
+                  </textarea>
+                  <div class="error-message text-center"></div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" value="Submit">
+                      Submit
+                    </button>
+                    <button
+                      class="btn btn-danger button delete"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../api/auth.js"></script>
+    <script src="../api/event.js"></script>
+  </body>
+</html>

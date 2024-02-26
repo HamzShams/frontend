@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <div class="login">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 wel">
+                    <div class="welcome text-center">
+                        <h1>Welcome Back</h1>
+                        <p>Please If You Are An Admin Write Your Email And Password To Can Move On To The DashBourd</p>
+                        <p>Please If You Are A Student Write Your Email And Password To Can Move On To The Page Home</p>
+                        <a href="register.html"><button  type="button" class="btn send">Sign In</button></a>
+                    </div>
+                </div>
+                <div class="col-md-8 col-xs-12">
+                    <div class="info">
+                        <h2 class="text-center">LogIn</h2>
+                        <form  id="loginForm">
+                            <div class="input-icons">
+                                <i class="fa fa-phone icon">
+                              </i>
+                                <input class="input-field shadow"
+                                       name="phone_number"
+                                       type="text"
+                                       placeholder="Phone Number">
+                            </div>
+                            <div class="input-icons">
+                                <i class="fa fa-key icon">
+                              </i>
+                                <input class="input-field shadow"
+                                       name="password"
+                                       id="password"
+                                       type="password"
+                                       placeholder="Password">
+                            </div>
+                            <input  type="submit" class="btn send borderraduis"></input>
+                            <div class="error-message"></div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="api/auth.js"></script>
+
+
+    </body>
+</html>
